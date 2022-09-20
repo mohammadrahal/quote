@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --Light-Cyan: hsl(193, 38%, 86%);
+     --Neon-Green: hsl(150, 100%, 66%);
+     /* Neutral */
+     --Grayish-Blue: hsl(217, 19%, 38%);
+     --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+     --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+.attribution {
+     text-transform: uppercase;
+     font-size: 1.0625rem;
+     text-align: center;
+     margin-top: 60px;
+}
+.attribution span{
+     color: #fff;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+img {
+     max-width: 100%;
+}
+
+button {
+     user-select: none;
+}
+
+body {
+     height: 100vh;
+     font-family: "manrope", sans-serif;
+     font-weight: 800;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: var(--Dark-Blue);
+}
+
+.container {
+     max-width: 400px;
+     text-align: center;
+     background: var(--Dark-Grayish-Blue);
+     padding: 40px;
+     margin: 0 auto;
+     border-radius: 1.25rem;
+     position: relative;
+
+}
+
+
+.btn {
+     position: absolute;
+     left: 50%;
+     bottom: -50px;
+     transform: translateX(-50%);
+     background: hsl(150, 100%, 66%);
+     padding: 0.9375rem 1.0625rem;
+     border-radius: 50%;
+     border: none;
+     cursor: pointer;
+}
+
+.btn:hover{
+          color: #111;
+          background: #0838c8;
+          box-shadow: 0 0 50px #0315b4;
+      
+}
+
+
+#quote {
+     font-size: 1.75rem;
+     color: hsl(193, 38%, 86%);
+     line-height: 1.5;
+     padding-bottom: 1rem;
+    
+}
+
+#id {
+     font-size: 0.80rem;
+     color: hsl(150, 100%, 66%);
+     margin-top: 0.25rem;
+}
+
+#author {
+     color: #fff;
+     font-size: 0.80rem;
+     margin-bottom: 10px;
+}
+
+
+@media (min-width: 500px) {
+     .container {
+          max-width: 480px;
+          margin: 0.4375rem;
+          padding: 0.4375rem;
+     }
+}
